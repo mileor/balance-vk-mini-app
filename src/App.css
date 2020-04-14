@@ -1,0 +1,29 @@
+.input-wrap {
+  position: relative;
+  display: block;
+}
+
+.input-wrap input {
+  padding-right: 60px;
+}
+
+.input-wrap:before {
+  position: absolute;
+  content: 'раз';
+  right: 24px;
+  top: 0;
+  line-height: 44px;
+  z-index: 10;
+  color: var(--panel_tab_active_text);
+}
+
+.input-wrap--time:before {
+  content: 'минут';
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: var(--button_bot_shadow);
+  height: 4px;
+  border-radius: 50px;
+}
